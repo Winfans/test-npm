@@ -2,8 +2,10 @@ name: npm-publish
 
 on:
   push:
-    branches:
-      - 'releases/**'
+    # branches:
+    #   - 'releases/**'
+    tags:
+      - 'v*.*.*'
 
 jobs:
   build:
